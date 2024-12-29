@@ -15,15 +15,17 @@ function auth($rule = null)
 {
     if (isset($_SESSION['admin'])) {
         $rule_id = $_SESSION['admin']['rule_id'];
+
         if ($rule_id == 1 || $rule_id == $rule) {
             return true;
         } else {
             redirect('pages/error-404.php');
         }
     } else {
-        redirect('pages/login.php');
+        redirect('pages/error-404.php');
     }
 }
+
 
 function admin_only()
 {

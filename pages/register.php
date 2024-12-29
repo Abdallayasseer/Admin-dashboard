@@ -1,7 +1,6 @@
 <?php include_once '../core/config.php' ?>
 <?php include_once '../core/path.php' ?>
 <?php include_once '../shared/head.php' ?>
-
 <?php
 if (isset($_POST['submit'])) {
   $name = $_POST['name'];

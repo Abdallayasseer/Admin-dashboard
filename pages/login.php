@@ -23,7 +23,6 @@ if (isset($_POST['login'])) {
       ];
       admin_only();
     }
-
     $_SESSION['message'] = "wrong password";
   } else {
     $_SESSION['message'] = "User not found";

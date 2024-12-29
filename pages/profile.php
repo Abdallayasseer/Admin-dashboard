@@ -3,6 +3,7 @@
 <?php include_once '../shared/asid.php' ?>
 <?php include_once '../core/config.php' ?>
 <?php include_once '../core/path.php' ?>
+<?php auth(3); ?>
 <?php
 // Get user ID from URL parameter
 $user_id = $_SESSION['admin']['id'];

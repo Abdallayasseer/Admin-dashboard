@@ -1,6 +1,8 @@
 <?php include_once '../shared/head.php' ?>
 <?php include_once '../shared/header.php' ?>
 <?php include_once '../shared/asid.php' ?>
+<?php include_once '../core/path.php' ?>
+<?php auth(3); ?>
 
 <main id="main" class="main">
 
