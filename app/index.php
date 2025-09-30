@@ -5,6 +5,8 @@
 <?php include_once '../core/config.php' ?>
 <?php include_once '../core/path.php' ?>
 <?php
+auth(3);
+
 // Get all users from the database
 $select = "SELECT * FROM users";
 $result = mysqli_query($connect, $select);

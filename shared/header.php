@@ -214,10 +214,16 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="<?= URL('/pages/login.php') ?>">
-                            <i class="bi bi-box-arrow-right"></i>
-                            <span>Sign Out</span>
-                        </a>
+                        <form method="post">
+                            <button name="logout" type="submit" class="btn dropdown-item d-flex align-items-center">Logout</button>
+                            <?php
+                            if (isset($_POST['logout'])) {
+                                unset($_SESSION['admin']);
+                                session_destroy();
+                                redirect('/pages/login.php');
+                            }
+                            ?>
+                        </form>
                     </li>
 
                 </ul><!-- End Profile Dropdown Items -->

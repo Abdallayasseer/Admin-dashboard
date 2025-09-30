@@ -5,6 +5,7 @@
 <?php include_once '../core/config.php' ?>
 <?php include_once '../core/path.php' ?>
 <?php
+auth(3);
 if (isset($_POST['submit'])) {
     $name = validate_input($_POST['name']);
     $email = validate_input($_POST['email']);
